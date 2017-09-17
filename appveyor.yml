@@ -22,6 +22,8 @@ test_script:
 
 after_build:
   - 7z a release.zip %APPVEYOR_BUILD_FOLDER%\lib\x64\Release\*
+  - dir
+  
 artifacts:
   - path: release.zip
     name: LibRelease

@@ -19,4 +19,3 @@ build_script:
 
 test_script:
   - if [%COMPILER%]==[MSVC15] cd mpir-tests
-  - if [%COMPILER%]==[MSVC15] python %cd%\run-tests.py 0

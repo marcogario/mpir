@@ -17,8 +17,8 @@ build_script:
   - if [%COMPILER%]==[MSVC15] cd build.vc14
   - if [%COMPILER%]==[MSVC15] msbuild.bat gc lib %PLATFORM% %BUILD_TYPE% # +tests
 
-test_script:
-  - if [%COMPILER%]==[MSVC15] cd mpir-tests
+#test_script:
+#  - if [%COMPILER%]==[MSVC15] cd mpir-tests
 
 after_build:
   - cd %APPVEYOR_BUILD_FOLDER%

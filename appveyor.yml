@@ -21,7 +21,7 @@ test_script:
   - if [%COMPILER%]==[MSVC15] cd mpir-tests
 
 after_build:
-  - 7z a release.zip %APPVEYOR_BUILD_FOLDER%\lib\Release\*
+  - 7z a release.zip %APPVEYOR_BUILD_FOLDER%\lib\x64\Release\*
 artifacts:
   - path: release.zip
     name: LibRelease
